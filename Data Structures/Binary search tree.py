@@ -1,33 +1,3 @@
-"""Prep 9 Synthesize: Binary Search Trees
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: David Liu and Diane Horton
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2020 David Liu and Diane Horton
-
-=== Module Description ===
-Your task in this prep's synthesize is to implement each of the unimplemented
-BinarySearchTree methods in this file.
-
-Take advantage of the BinarySearchTree property to ensure that you are only
-making the recursive calls that are required to implement the function---
-do not make any unnecessary calls!
-(The prep readings illustrate this idea in the discussion of how __contains__
-is implemented.)
-
-NOTE: the doctests access and assign to private attributes directly, which is
-not good practice (although python_ta doesn't complain about it in doctests).
-"""
 from __future__ import annotations
 from typing import Any, List, Optional
 
