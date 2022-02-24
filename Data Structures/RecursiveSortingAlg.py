@@ -1,25 +1,3 @@
-"""Prep 11 Synthesize: Recursive Sorting Algorithms
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: David Liu and Diane Horton
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2021 David Liu and Diane Horton
-
-=== Module Description ===
-This file includes the recursive sorting algorithms from this week's prep
-readings, and two short programming exercises to extend your learning about
-these algorithms in different ways.
-"""
 from typing import Any, List, Tuple
 
 
