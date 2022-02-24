@@ -1,26 +1,3 @@
-"""CSC148 Prep 5 Synthesize
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: David Liu and Diane Horton
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2020 David Liu and Diane Horton
-
-=== Module Description ===
-This module contains the code for a linked list implementation with two classes,
-LinkedList and _Node.
-
-NOTE: There is an additional task in the prep5_starter_tests.py file.
-"""
 from __future__ import annotations
 from typing import Any, Optional
 
