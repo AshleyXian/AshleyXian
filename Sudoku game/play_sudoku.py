@@ -1,29 +1,3 @@
-"""
-CSC148, Winter 2021
-Assignment 2: Automatic Puzzle Solver
-==============================
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: Diane Horton, Jonathan Calver, Sophia Huynh,
-         Maryam Majedi, and Jaisie Sin.
-
-All of the files in this directory are:
-Copyright (c) 2021 Diane Horton, Jonathan Calver, Sophia Huynh,
-                   Maryam Majedi, and Jaisie Sin.
-
-=== Module Description ===
-
-This module contains a basic GUI to allow you to play randomly generated
-instances of your SudokuPuzzle once you have completed the necessary parts
-of the assignment. When run, instructions on how to use it are displayed
-in the console.
-
-Feel free to modify this module.
-"""
 from __future__ import annotations
 from typing import List, Tuple
 
