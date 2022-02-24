@@ -1,25 +1,3 @@
-"""Prep 10 Synthesize
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: Sophia Huynh
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2021 Sophia Huynh
-
-=== Module Description ===
-Your task in this prep is to implement each the unimplemented Tree method
-in this file. This method is different from others that you have seen, but
-it will give you practice in mutating a Tree.
-"""
 from __future__ import annotations
 from typing import Optional, Any, List
 
