@@ -1,8 +1,4 @@
-"""
-One implementation each of Stack and Queue.
-"""
 from typing import List, Optional, Any
-
 
 ###############################################################################
 # Stacks
@@ -114,3 +110,116 @@ class Queue:
             return None
         else:
             return self._items.pop(0)
+
+
+def peek(stack: Stack) -> Optional[Any]:
+    """Return the top item on the given stack.
+    If the stack is empty, return None.
+    Unlike Stack.pop, this function should leave the stack unchanged when the
+    function ends. You can (and should) still call pop and push, just make
+    sure that if you take any items off the stack, you put them back on!
+    >>> stack = Stack()
+    >>> stack.push(1)
+    >>> stack.push(2)
+    >>> peek(stack)
+    2
+    >>> stack.pop()
+    2
+    """
+    if stack.is_empty():
+        return None
+    else:
+        last = stack.pop()
+        stack.push(last)
+        return last
+
+
+def reverse_top_two(stack: Stack) -> None:
+    """Reverse the top two elements on <stack>.
+    Precondition: <stack> has at least two items.
+    >>> stack = Stack()
+    >>> stack.push(1)
+    >>> stack.push(2)
+    >>> reverse_top_two(stack)
+    >>> stack.pop()
+    1
+    >>> stack.pop()
+    2
+    >>> stack.is_empty()
+    True
+    """
+    last = stack.pop()
+    sec_last = stack.pop()
+    stack.push(last)
+    stack.push(sec_last)
+
+
+def remove_all(queue: Queue) -> None:
+    """Remove all items from the given queue.
+    >>> queue = Queue()
+    >>> queue.enqueue(1)
+    >>> queue.enqueue(2)
+    >>> queue.enqueue(3)
+    >>> remove_all(queue)
+    >>> queue.is_empty()
+    True
+    """
+    while not queue.is_empty():
+        queue.dequeue()
+
+
+def remove_all_but_one(queue: Queue) -> None:
+    """Remove all items from the given queue except the last one.
+    Precondition: <queue> contains at least one item.
+                  or: not queue.is_empty()
+    >>> queue = Queue()
+    >>> queue.enqueue(1)
+    >>> queue.enqueue(2)
+    >>> queue.enqueue(3)
+    >>> remove_all_but_one(queue)
+    >>> queue.is_empty()
+    False
+    >>> queue.dequeue()
+    3
+    >>> queue.is_empty()
+    True
+    """
+    last = None
+    while not queue.is_empty():
+        last = queue.dequeue()
+    queue.enqueue(last)
+    
+
+def add_in_order(stack: Stack, lst: list) -> None:
+    """
+    Add all items in <lst> to <stack>, so that when items are removed from
+    <stack>, they are returned in <lst> order.
+    Precondition: stack.is_empty() is True
+    >>> stack = Stack()
+    >>> lst = [1, 1]
+    >>> add_in_order(stack, lst)
+    >>> results = []
+    >>> results.append(stack.pop())
+    >>> results.append(stack.pop())
+    >>> lst == results
+    True
+    >>> stack.is_empty()
+    True
+    """
+    for item in lst:
+        stack.push(item)
+
+
+if __name__ == '__main__':
+    # Uncomment the lines below to run the doctests in this file.
+    import doctest
+    doctest.testmod()
+
+    # Remember, to get this to work you need to Run this file, not just the
+    # doctests in this file!
+    import python_ta
+
+    python_ta.check_all(config={
+        'extra-imports': ['adts'],
+        'disable': ['E1136']
+    })
