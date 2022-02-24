@@ -1,32 +1,3 @@
-"""
-CSC148, Winter 2021
-Assignment 2: Automatic Puzzle Solver
-==============================
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: Diane Horton, Jonathan Calver, Sophia Huynh,
-         Maryam Majedi, and Jaisie Sin.
-
-All of the files in this directory are:
-Copyright (c) 2021 Diane Horton, Jonathan Calver, Sophia Huynh,
-                   Maryam Majedi, and Jaisie Sin.
-
-=== Module Description ===
-
-This module contains the sudoku puzzle class.
-
-Note: Some of the provided code makes use of list comprehensions
-      and can be a bit hard to understand if you aren't familiar with
-      them. You do NOT need to understand HOW the provided code works,
-      but you need to understand WHAT services it is providing, so that you
-      can make use of the provided private methods to help you with the task of
-      implementing fail_fast.
-"""
-
 from __future__ import annotations
 from typing import List, Set
 from puzzle import Puzzle
