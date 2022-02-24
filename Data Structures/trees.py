@@ -1,29 +1,3 @@
-"""Prep 8 Synthesize
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: David Liu and Diane Horton
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2021 David Liu and Diane Horton
-
-=== Module Description ===
-Your task in this prep is to implement each of the unimplemented Tree methods
-in this file.
-
-The starter code has a recursive template that treats both the "empty tree"
-and the "size-one" tree ("leaf") as base cases.  You may not need both of these
-base cases -- it depends on the method you are writing.  If you can, collapse
-down to just one base case.
-"""
 from __future__ import annotations
 from typing import Any, List, Optional
 
