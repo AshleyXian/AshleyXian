@@ -1,29 +1,3 @@
-"""Prep 3 Synthesize
-
-=== CSC148 Winter 2021 ===
-Department of Computer Science,
-University of Toronto
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: David Liu
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2020 David Liu
-
-=== Module Description ===
-This module contains an illustration of *inheritance* through an abstract
-Employee class that defines a common interface for all of its subclasses.
-
-As usual, delete the TODO comments after you've completed each part.
-
-There is also a task inside prep3_starter_tests.py.
-Make sure to look at that file and complete the TODO there as well.
-"""
 from datetime import date
 from typing import List
 
