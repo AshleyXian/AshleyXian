@@ -1,25 +1,3 @@
-"""Assignment 1 - Domain classes (Task 2)
-
-CSC148, Winter 2021
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: Diane Horton, Ian Berlott-Atwell, Jonathan Calver,
-Sophia Huynh, Maryam Majedi, and Jaisie Sin.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2021 Diane Horton, Ian Berlott-Atwell, Jonathan Calver,
-Sophia Huynh, Maryam Majedi, and Jaisie Sin.
-
-===== Module Description =====
-
-This module contains the classes required to represent the entities
-in the simulation: Parcel, Truck and Fleet.
-"""
 from typing import List, Dict
 from distance_map import DistanceMap
 
