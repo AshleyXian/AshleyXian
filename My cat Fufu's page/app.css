@@ -1,0 +1,47 @@
+body {
+    background-color: #bdb2ff;
+    font-family: 'Hubballi', cursive;
+    /* font-size: 1.5em; */
+}
+
+.fufu h2 {
+    color: #fdffb6;
+}
+
+.fufu p {
+    color: #caffbf;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ffadad;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ffadad;
+    font-size: 1.5em;
+}
+
+.navbar.scrolled {
+    background: #76a7f5;
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h2 {
+        font-size: 3rem;
+    }
+}
