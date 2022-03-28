@@ -1,32 +1,3 @@
-"""Assignment 1 - Compare all algorithms on a single problem (No tasks)
-
-CSC148, Winter 2021
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-Authors: Diane Horton, Ian Berlott-Atwell, Jonathan Calver,
-Sophia Huynh, Maryam Majedi, and Jaisie Sin.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2021 Diane Horton, Ian Berlott-Atwell, Jonathan Calver,
-Sophia Huynh, Maryam Majedi, and Jaisie Sin.
-
-===== Module Description =====
-
-This module reads from a json file (whose name is hard-coded in the
-compare_algorithms block) to determine the parcel, truck and map files to use.
-It then constructs all nine possible algorithm configurations, and runs each
-on this same data.  Results are printed to a csv file called 'results.csv'.
-
-You have no tasks associated with this module.  It is provided to you so that
-you can compare the performance of the algorithms and notice any patterns or
-conclusions you might draw.  You may also find that reviewing the comparison
-reveals bugs in your code.
-"""
 from typing import TextIO, Dict, Union
 import json
 from experiment import SchedulingExperiment
