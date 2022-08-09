@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<h1>React 3</h1>
+<p>this is a p</p>
+
+<div class="box" style="height: 100px; width: 100px; background-color: #23b6ff"></div>
+<button class="btn">click me</button>
+
+<div id="app"></div>
+
+<script type="text/babel">
+    class App extends React.Component {
+        constructor() {
+            super();
+            // how to define state
+            this.state = {
+                a: 100,
+                b: 200
+            }
+            // this.onClickHandler = this.onClickHandler.bind(this);
+        }
+        // state = {
+        //     a: 100,
+        //     b: 200
+        // }
+
+        render() {
+            console.log("render ->", this.state);
+            // how to read state
+            const { a, b } = this.state;
+            return (
+                <div>
+                    <p>The num I got is: { this.props.num }</p>
+
+                    <hr/>
+
+                    <p>My state a is: {a}</p>
+                    <p>My state b is: {b}</p>
+                    <div>
+                        <button onClick={
+                            () => {
+                                console.log('clicked');
+                                // X this.state.a = this.state.a + 10;
+                                this.setState({a: "haha"});
+                                // this.setState({ a: this.state.a + 10 })
+                            }
+                        }>click me</button>
+
+                        <button onClick={this.onClickHandler}>click me again</button>
+                    </div>
+
+                    <div style={{
+                        backgroundColor: "red",
+                        width: b,
+                        height: b
+                    }}></div>
+                </div>
+            )
+        }
+
+        onClickHandler = () => {
+            console.log("clicked again!!")
+            // console.log(this);
+            this.setState( preState => {
+                console.log(preState)
+                // return a new state
+                return { b: preState.b + 100 }
+            })
+
+            // setState(obj) => obj: new state object
+            // setState(cb) => new state depends on previous state
+        }
+
+        // onClickHandler() {
+        //     console.log("clicked again!!")
+        //     console.log(this); // ? undefined
+        // }
+
+        // react component
+        // ....
+        // ....
+        // setState = (paras) => {
+        //     if(paras == obj) {
+        //         ,....
+        //     }
+        //
+        //     if(paras == function) {
+        //         ...
+        //         paras(preState)
+        //     }
+        //
+        // }
+    }
+
+    // function Haha(props) {
+    //     return (
+    //         <div>I am Haha Component, my data is { props.num.b }</div>
+    //     )
+    // }
+
+    // let obj = {a: 1, b:2};
+
+    ReactDOM.render(
+        <App num={ 10 }/>,
+        document.getElementById("app")
+    )
+</script>
+<script>
+    function fn(num) {
+        let a = 10;
+        return num + a;
+    }
+
+    let oBox = document.getElementsByClassName("box")[0],
+        oBtn = document.getElementsByClassName("btn")[0];
+
+    let val = 100;
+    oBtn.addEventListener('click', function(){
+        // change value(data)
+        val += 10;
+
+        // view <-> data
+        oBox.style.height = val + "px";
+        oBox.style.width = val + "px";
+    })
+</script>
+
+</body>
+</html>
