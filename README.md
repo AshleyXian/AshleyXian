@@ -6,6 +6,13 @@
 - 📫 Reach me by ss6371@columbia.edu or [my_linkedin](https://www.linkedin.com/in/shanshan-shangguan/).
 ---
 # About my Projects
+## React, Java Spring and Hibernate-based Online Food Ordering System (check my home page to see the complete project)
+1. Implemented RESTful API via Spring MVC, including registration, menu searching and ordering, and checkout.
+2. Utilized Hibernate to access and operate the data storage (menu, restaurants) and set up MySQL instance using AWS RDS.
+3. Provided authentication and authorization via Spring security to protect the application from malicious attacks.
+4. Used the Spring framework core technologies to decouple all the components in the application loosely.
+5. Built the user interface with React and Ant Design to allow users to add items to the shopping cart and place orders. 
+
 ## Compare Algorithms for Parcel Delivery
 1. A project simulates parcel scheduling and tests the difference between random algorithm and greedy algorithm.
 2. The module that drives the whole program is `experiment.py`. It contains class `SchedulingExperiment`.
